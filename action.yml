@@ -31,5 +31,5 @@ outputs:
   release-notes-markdown:
     description: Draft release notes based on pull requests merged during the look-back window.
 runs:
-  using: node20
+  using: node24
   main: dist/index.mjs

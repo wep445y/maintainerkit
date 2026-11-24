@@ -1,6 +1,6 @@
 {
   "name": "maintainerkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A read-only GitHub Action that turns repository activity into a maintainer digest and draft release notes.",
   "license": "MIT",
   "private": false,
@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "tsc --noEmit && esbuild src/main.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/index.mjs --legal-comments=external --banner:js='import { createRequire } from \"node:module\"; const require = createRequire(import.meta.url);'",
+    "build": "tsc --noEmit && esbuild src/main.ts --bundle --platform=node --format=esm --target=node24 --outfile=dist/index.mjs --legal-comments=external --banner:js='import { createRequire } from \"node:module\"; const require = createRequire(import.meta.url);'",
     "test": "tsx --test tests/*.test.ts",
     "check": "npm test && npm run build"
   },

@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate digest
-        uses: wep445y/maintainerkit@v0.1.0
+        uses: wep445y/maintainerkit@v0.1.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           days: "7"
@@ -65,7 +65,7 @@ The example workflow grants only read access to issues and pull requests. Mainta
 
 ## Development
 
-Requirements: Node.js 20 or later and npm.
+Development requirements: Node.js 20 or later and npm. The published GitHub Action runs on the Node 24 Actions runtime.
 
 ```sh
 npm ci
